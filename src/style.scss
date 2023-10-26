@@ -286,9 +286,9 @@ main {
     .about-img {
       display: flex;
       flex-direction: row;
-      justify-content: end;
+      justify-content: flex-end;
       padding: 1rem;
-      align-items: end;
+      align-items: flex-end;
       font-size: 2rem;
       background-image: url(https://arjun40779.github.io/portfolio/about-imgv.avif);
       background-size: cover;
