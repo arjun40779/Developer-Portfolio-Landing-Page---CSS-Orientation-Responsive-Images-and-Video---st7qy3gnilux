@@ -120,7 +120,7 @@ main {
       .hero__img {
         img {
           width: 20vw;
-
+          border-radius: 50%;
           animation: 2s ease-in 0s 1 slideInFromLeft;
         }
         @keyframes slideInFromLeft {
@@ -449,4 +449,11 @@ Footer {
   Footer {
     background-color: white;
   }
+}
+#quotes {
+  height: 5rem;
+  width: 35rem;
+}
+.App {
+  background: url("./components/bg.jpg");
 }
