@@ -27,7 +27,7 @@ const Project = () => {
       title: "Pokemon Kingdom",
       text: "Browse pokemon stasts ",
       git_url: "https://github.com/arjun40779/pokemon",
-      host_url: "https://v693jv-3000.csb.app/",
+      host_url: "https://pokemonkingdon.netlify.app/",
     },
     {
       id: 4,
