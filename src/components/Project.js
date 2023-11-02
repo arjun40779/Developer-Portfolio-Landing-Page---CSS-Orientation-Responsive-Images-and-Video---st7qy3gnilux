@@ -47,6 +47,16 @@ const Project = () => {
         "https://github.com/arjun40779/Zee5-Cinema-Clone---React-Project-1---k0oz8rtzq0n9",
       host_url: "https://zee5-clone-arjun4079.netlify.app/",
     },
+    {
+      id: 6,
+      img_url:
+        "https://www.designnominees.com/application/upload/Websites/2022/02/beyoung-folks-private-limited-147.jpg",
+      title: "Beyoung-clone",
+      text: "Beyoung is an online shopping site for men's and women's clothing in India. They offer a wide range of options, including: Tees, Topwear, Shirts, Boxers, Sweatpants, Joggers, Chino pants, Jeans, Pyjamas, Formal pants.",
+      git_url:
+        "https://github.com/arjun40779/Beyoung---React-Project-2---aihcnvtyjvs7",
+      host_url: "https://beyoung-arjun40779.netlify.app/",
+    },
   ];
 
   return (
