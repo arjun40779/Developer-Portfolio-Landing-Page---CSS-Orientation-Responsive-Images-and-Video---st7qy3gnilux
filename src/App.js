@@ -9,16 +9,11 @@ import { Feedback } from "./components/Feedback";
 import { About } from "./components/About";
 import { useEffect } from "react";
 import "./style.scss";
-import "./styles.css";
 
 export default function App() {
-  useEffect(() => {
-    let mobNav = document.getElementsByClassName("mobile-menu")[0];
-    mobNav.style.display = "none";
-  });
   return (
     <div className="App">
-      <Nav />
+      {/*     <Nav />
       <main className="content">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -27,6 +22,12 @@ export default function App() {
           <Route path="projects" element={<Project />} />
         </Routes>
       </main>
+      <Footer /> */}
+      <Nav />
+      <Home />
+      <About />
+      <Project />
+      <Contact />
       <Footer />
     </div>
   );

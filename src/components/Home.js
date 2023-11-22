@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Skills } from "./Skills";
+
 /* 
 https://shakuro.com/blog/react-spring-tutorial-making-animated-react-apps */
 const Home = () => {
@@ -39,11 +40,7 @@ const Home = () => {
         </div>
 
         <div className="hero__img">
-          <img
-            className="hero-img"
-            src="https://arjun40779.github.io/portfolio/hero-img.avif"
-            alt=""
-          />
+          <img className="hero-img" src="dp.jpg" alt="" />
         </div>
       </div>
 

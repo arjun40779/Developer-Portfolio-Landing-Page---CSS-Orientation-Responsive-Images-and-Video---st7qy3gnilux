@@ -61,39 +61,41 @@ const Project = () => {
 
   return (
     <section className="projects" id="projects">
-      <h3>PROJECTS</h3>
-      <h5>Each project is a unique piece of development</h5>
+      <div className="container">
+        <h3>PROJECTS</h3>
+        <h5>Each project is a unique piece of development</h5>
 
-      <div className="project-content">
-        {data.map((item) => {
-          return (
-            <div key={item.id} className="project-items">
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={item.img_url}
-                  alt="Card image cap"
-                />
-                <div className="card-body">
-                  <p className="card-title">{item.title}</p>
-                  {/*  <p className="card-text">
+        <div className="project-content">
+          {data.map((item) => {
+            return (
+              <div key={item.id} className="project-items">
+                <div className="card">
+                  <img
+                    className="card-img-top"
+                    src={item.img_url}
+                    alt="Card image cap"
+                  />
+                  <div className="card-body">
+                    <p className="card-title">{item.title}</p>
+                    {/*  <p className="card-text">
                 {item.text}
               </p> */}
-                  <div className="cardbtn">
-                    <a href={item.git_url} className="btn " target="_blank">
-                      code &nbsp;&nbsp;
-                      <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href={item.host_url} className="btn" target="_blank">
-                      Live Demo &nbsp;
-                      <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
-                    </a>
+                    <div className="cardbtn">
+                      <a href={item.git_url} className="btn " target="_blank">
+                        Code &nbsp;&nbsp;
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href={item.host_url} className="btn" target="_blank">
+                        Live Demo &nbsp;
+                        <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
       {/* <h4>More coming soon..</h4> */}
     </section>

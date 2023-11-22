@@ -1,27 +1,53 @@
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
 export function Feedback() {
   const greet = (e) => {
     alert("Thank you for your response!");
   };
   return (
     <div>
-      <form
+      {/*     <form
         action="https://formspree.io/f/xwkdjpok"
         method="POST"
         className="form"
+      > */}
+      <Box
+        component="form"
+        sx={{
+          "& .MuiTextField-root": {
+            m: 1,
+            width: "50%",
+            backgroundColor: "white",
+            padding: "1rem",
+          },
+        }}
+        noValidate
+        autoComplete="off"
+        action="https://formspree.io/f/xwkdjpok"
+        method="POST"
       >
-        <label>
-          Your email:
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
+        <TextField
+          required
+          id="outlined-required"
+          label="Email"
+          variant="standard"
+          name="email"
+        />
 
+        <TextField
+          required
+          id="standard-multiline-static"
+          label="Message"
+          multiline
+          rows={4}
+          variant="standard"
+          name="message"
+        />
         <button type="submit" id="submit">
           Send
         </button>
-      </form>
+      </Box>
+      {/*      </form> */}
     </div>
   );
 }
