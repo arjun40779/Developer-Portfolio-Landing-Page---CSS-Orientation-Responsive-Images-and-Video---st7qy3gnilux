@@ -254,15 +254,6 @@ Footer {
       gap: 2rem;
     }
   }
-
-  label#outlined-required-label {
-    font-size: 1.25rem;
-    margin-left: 1rem;
-  }
-  label#standard-multiline-static-label {
-    font-size: 1.25rem;
-    margin-left: 1rem;
-  }
 }
 button#submit {
   display: block;
@@ -272,4 +263,12 @@ button#submit {
   border: none;
   outline: noe;
   padding: 0.5rem 3rem;
+}
+label#outlined-required-label {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+label#standard-multiline-static-label {
+  font-size: 1.25rem;
+  margin-left: 1rem;
 }
