@@ -51,6 +51,11 @@ body {
     height: 5rem;
     justify-content: space-between;
     align-items: center;
+
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    background-color: #231f20;
     i {
       display: none;
     }
@@ -75,6 +80,7 @@ body {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
+  padding-top: 8rem;
   .hero-content {
     max-width: 1200px;
 
@@ -310,7 +316,6 @@ label#standard-multiline-static-label {
     background-color: #231f20;
   }
   .hero {
-    margin-top: 6rem;
     min-height: 100dvh;
   }
   .hero .hero-content {
@@ -393,13 +398,13 @@ label#standard-multiline-static-label {
   .feedback {
     width: 100%;
   }
-  .card,
-  img,
-  span,
-  .css-16i74dr .MuiTextField-root {
-    z-index: -1;
-  }
 }
 .visible {
   display: flex;
+}
+.card,
+img,
+span,
+.css-16i74dr .MuiTextField-root {
+  z-index: -1;
 }

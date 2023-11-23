@@ -19,6 +19,7 @@ export function Feedback() {
             width: "100%",
             backgroundColor: "white",
             padding: "1rem",
+            zIndex: "-1",
           },
         }}
         noValidate

@@ -13,7 +13,6 @@ const Nav = () => {
           }}
           size={40}
         />
-        <h3 className="initial">Arjun.</h3>
         {isNavVisible ? (
           <ul className={`nav-list`}>
             <li id="home-li">
@@ -29,7 +28,8 @@ const Nav = () => {
               <a href="#contact">CONTACT</a>
             </li>
           </ul>
-        ) : null}
+        ) : null}{" "}
+        <h3 className="initial">Arjun.</h3>
       </div>
     </nav>
   );
