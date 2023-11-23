@@ -3,9 +3,8 @@ export function About() {
     <div id="about" className="about">
       <div className="container">
         <div className="about-img">
-          <span>Hi i</span>
-          <span> 'm A</span>
-          <span> rjun</span>
+          <img src="https://img.freepik.com/premium-photo/programmer-generative-ai_860599-3057.jpg?w=500"></img>
+          <span>Hi I'm Arjun</span>
         </div>
         <div className="about-text">
           <h3>ABOUT ME</h3>

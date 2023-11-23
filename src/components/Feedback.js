@@ -5,7 +5,7 @@ export function Feedback() {
     alert("Thank you for your response!");
   };
   return (
-    <div>
+    <div className="feedback">
       {/*     <form
         action="https://formspree.io/f/xwkdjpok"
         method="POST"
@@ -16,7 +16,7 @@ export function Feedback() {
         sx={{
           "& .MuiTextField-root": {
             m: 1,
-            width: "50%",
+            width: "100%",
             backgroundColor: "white",
             padding: "1rem",
           },

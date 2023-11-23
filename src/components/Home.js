@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { Skills } from "./Skills";
 
-/* 
-https://shakuro.com/blog/react-spring-tutorial-making-animated-react-apps */
 const Home = () => {
   function apiCall() {
     const p = document.getElementById("quotes");
@@ -11,12 +9,13 @@ const Home = () => {
       .then((data) => (p.innerText = data.quote + "\n- Kanye West"));
   }
   useEffect(() => {
+    window.scrollTo(0, 0);
     apiCall();
     console.log("i fire once");
   });
   return (
-    <section className="hero" id="Home">
-      <div className="hero-content">
+    <section className="hero " id="home">
+      <div className="hero-content ">
         <div className="hero-text">
           <h1>Front-End React Developer</h1>
           <p>

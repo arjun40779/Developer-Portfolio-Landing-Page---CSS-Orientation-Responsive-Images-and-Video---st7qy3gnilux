@@ -43,6 +43,7 @@ body {
   font-size: 150%;
   width: 100%;
   color: #8e8d8a;
+  background-color: #231f20;
   .container {
     max-width: 1200px;
     margin: auto;
@@ -153,7 +154,8 @@ body {
         .card {
           width: 100%;
           height: 100%;
-
+          background-color: #231f20;
+          color: white;
           .card-body {
             flex: 1 1 auto;
             padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
@@ -224,19 +226,20 @@ body {
       }
     }
     .about-img {
-      background: url(http://localhost:3002/static/media/avtar.25647a2207a5bd9574fb.jpg);
-      width: 40%;
-      height: 500px;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       font-size: 2rem;
-      background-size: cover;
-      background-repeat: no-repeat;
+      position: relative;
+      img {
+        width: 100%;
+        border-radius: 15%;
+      }
       span {
         color: #000;
         font-weight: 800;
+        position: absolute;
       }
     }
   }
@@ -271,4 +274,132 @@ label#outlined-required-label {
 label#standard-multiline-static-label {
   font-size: 1.25rem;
   margin-left: 1rem;
+}
+.feedback {
+  width: 50%;
+}
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 14px;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 20px;
+  }
+
+  .nav__bar .container h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+  }
+  .nav__bar .container {
+    height: 3rem;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    background-color: #231f20;
+  }
+  .nav__bar .container ul {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    position: absolute;
+    left: 0;
+    padding: 5rem;
+    background-color: #231f20;
+  }
+  .hero {
+    margin-top: 6rem;
+    min-height: 100dvh;
+  }
+  .hero .hero-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+  }
+  .hero .hero-content .hero__img {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+  .hero .hero-content .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  .hero .skills {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0;
+  }
+  .hero .skills ul.logos {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero .hero-content .hero-text h1 {
+    font-size: 25px;
+  }
+  .hero .skills ul.logos li img {
+    width: 25px;
+    height: 26px;
+    border-radius: 5px;
+  }
+  .hero .skills p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-bottom: 1px solid;
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+  .contact .contact__content .contact__icons {
+    flex-wrap: wrap;
+  }
+  .hero .hero-content .hero-text .hero-icons {
+    font-size: 2rem;
+  }
+  .about .container {
+    flex-direction: column;
+  }
+  .about .container .about-img {
+    width: 50%;
+  }
+  .about .container .about-text {
+    width: 100%;
+  }
+  .about .container .about-img span {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .projects .container .project-content {
+    display: block;
+  }
+  .projects .container .project-content .project-items {
+    width: 100%;
+    margin: 3rem 0;
+    border: 1px solid gray;
+    border-radius: 1rem;
+  }
+  .projects
+    .container
+    .project-content
+    .project-items
+    .card
+    .card-body
+    .cardbtn
+    a {
+    font-size: 10px;
+  }
+  .feedback {
+    width: 100%;
+  }
+  .card,
+  img,
+  span,
+  .css-16i74dr .MuiTextField-root {
+    z-index: -1;
+  }
+}
+.visible {
+  display: flex;
 }
